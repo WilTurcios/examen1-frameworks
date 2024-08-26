@@ -1,0 +1,6 @@
+com\wgframeworks\evaluacionpractica1frameworks\JakartaRestConfiguration.class
+com\wgframeworks\evaluacionpractica1frameworks\resources\JakartaEE10Resource.class
+exceptions\InsufficientBalance.class
+clases\Empleado.class
+clases\Cuenta.class
+clases\Venta.class
