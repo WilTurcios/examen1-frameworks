@@ -1,4 +1,4 @@
-<%@page import="java.util.*" %>
+    <%@page import="java.util.*" %>
 <%@page import="clases.Empleado" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -62,7 +62,7 @@
             </div>
         </section>
 
-        <!-- Bootstrap 5 JS -->
+        <a href="../index.jsp" class="position-fixed bottom-0 start-50 translate-middle-x btn btn-primary">Volver</a>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     </body>
 </html>

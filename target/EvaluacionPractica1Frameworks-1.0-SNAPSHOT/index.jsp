@@ -34,15 +34,10 @@
                                 <a class="nav-link dropdown-toggle" href="#" id="dropdown02" data-bs-toggle="dropdown" aria-expanded="false">Ejercicio 2</a>
                                 <ul class="dropdown-menu" aria-labelledby="dropdown02">
                                     <li><a class="dropdown-item" href="./Ejercicio2/registrarEmpleado.jsp">Registrar Empleados</a></li>
-                                    <li><a class="dropdown-item" href="./Ejercicio2/mostrarEmpleados.jsp">Mostrar Empleados</a></li>
+                                    <!--<li><a class="dropdown-item" href="./Ejercicio2/mostrarEmpleados.jsp">Mostrar Empleados</a></li>-->
                                     <li><a class="dropdown-item" href="./Ejercicio2/registrarVentas.jsp">Registrar Ventas</a></li>
                                     <li><a class="dropdown-item" href="./Ejercicio2/listaEmpleados.jsp">Lista de empleados</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-bs-toggle="dropdown" aria-expanded="false">Ejercicio 3</a>
-                                <ul class="dropdown-menu" aria-labelledby="dropdown03">
-                                    <!-- Agrega los enlaces necesarios aquí -->
+                                    <li><a class="dropdown-item" href="./Ejercicio2/mostrarResumen.jsp">Resumen de Ventas</a></li>
                                 </ul>
                             </li>
                         </ul>

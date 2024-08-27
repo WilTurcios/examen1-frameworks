@@ -24,6 +24,7 @@
                             <th>Titular de la cuenta</th>
                             <th>Número de cuenta</th>
                             <th>Saldo Total</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -37,8 +38,16 @@
                                 out.println("<tr>");                   
                                 out.println("<td>" + account.getNombre() + "</td>");
                                 out.println("<td>" + account.getCuenta() + "</td>");
-                                out.println("<td>$" + account.  consultarSaldo() + "</td>");
-                                out.println("</tr>");
+                                out.println("<td>$" + account.consultarSaldo() + "</td>");
+                    %>
+                                <td>
+                                    <form action="mostrarTransacciones.jsp" method="GET">
+                                        <input type="hidden" name="cuenta" value="<%= account.getCuenta() %>">
+                                        <button type="submit" class="btn btn-primary">Ver Detalles de Transacciones</button>
+                                    </form>
+                                </td>
+                            </tr>
+                    <%
                             }
                         }
                     %>
@@ -47,7 +56,6 @@
             </div>
         </div>
                     <a href="index.jsp" class="position-fixed bottom-0 start-50 btn btn-primary">Volver</a>
-        <!-- Bootstrap 5 JS (Optional) -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>

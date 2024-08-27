@@ -1,3 +1,4 @@
+clases\Transaccion.class
 com\wgframeworks\evaluacionpractica1frameworks\JakartaRestConfiguration.class
 com\wgframeworks\evaluacionpractica1frameworks\resources\JakartaEE10Resource.class
 exceptions\InsufficientBalance.class

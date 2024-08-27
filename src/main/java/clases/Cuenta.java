@@ -5,6 +5,8 @@ package clases;
  * @author wilbe
  */
 import exceptions.*;
+import java.util.*;
+import clases.Transaccion;
 
 public class Cuenta {
     private String nombre;
@@ -12,6 +14,7 @@ public class Cuenta {
     private double saldoAnterior = 0.0;
     private double saldo;
     private double tipoInteres;
+    private List<Transaccion> transacciones = new ArrayList<Transaccion>();
     
     public Cuenta(String nombre, String cuenta, double saldo, double tipoInteres) { 
         this.cuenta = cuenta;
@@ -48,15 +51,19 @@ public class Cuenta {
         return this.saldoAnterior;
     }
     
-    public void depositar(double cantidad) { 
+    public void depositar(double cantidad) {
+        
         this.saldoAnterior = this.saldo;
         this.saldo += cantidad;
+        
+        this.transacciones.add(new Transaccion("Deposito", cantidad));
     }
     
     public void retirar(double cantidad) throws InsufficientBalance {
         this.saldoAnterior = this.saldo;
         if (cantidad <= this.saldo) {
             this.saldo -= cantidad;
+            this.transacciones.add(new Transaccion("Retiro", cantidad));
         } else {
             throw new InsufficientBalance("El saldo para realizar la operación es insuficiente.");
         }
@@ -70,4 +77,9 @@ public class Cuenta {
         double interesGanado = this.saldo * (this.tipoInteres / 100) * años;
         return interesGanado;
     }
+    
+    public List<Transaccion> getTransacciones() {
+        return this.transacciones;
+    }
+
 }
